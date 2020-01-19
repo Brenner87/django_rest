@@ -1,22 +1,18 @@
 from django.db import models
 from django.utils import timezone
+import datetime
 from django.urls import reverse
 from django.contrib.auth.models import User
 import json
 
 
-class CustomManager(models.Manager):
-    def getRates(self):
-        return self.all()
+class AcitiveRatesManager(models.Manager):
+    def get_queryset(self):
+        return super(AcitiveRatesManager, self).get_queryset().filter(active=True)
 
-    def insertRate(self, name, rate, rate_1=None, rate_2=None, rate_3=None, formula=None):
-        self.name = name
-        self.rate = rate
-        self.rate_1 = rate_1
-        self.rate_2 = rate_2
-        self.rate_3 = rate_3
-        self.formula = formula
-        self.save()
+class AllRatesManager(models.Manager):
+    def get_queryset(self):
+        return super(AllRatesManager, self).get_queryset().all()
 
 
 class Rates(models.Model):
@@ -29,8 +25,8 @@ class Rates(models.Model):
     formula = models.CharField(max_length= 300, null=True, verbose_name = u"Формула розрахунку")
     active = models.BooleanField(default=True, verbose_name=u"Активність")
 
-    objects = models.Manager()
-    custom = CustomManager()
+    objects = AcitiveRatesManager()
+    allRates = AllRatesManager()
 
     def __str__(self):
         return self.name
@@ -44,10 +40,11 @@ class Readings(models.Model):
 
     rate_id = models.ForeignKey('Rates', on_delete=models.CASCADE, verbose_name='Ідентифікатор')
     value = models.FloatField(max_length=30, verbose_name='Показання')
-    date_stamp = models.CharField(max_length=30, default=timezone.datetime.now().strftime ("%Y.%m"), verbose_name='Дата внесення')
+    date_stamp = models.DateField(default=datetime.date( timezone.now().year,  timezone.now().month, 1),
+verbose_name='Дата внесення')
 
     def _str__(self):
-        return self.name
+        return '{}_{}'.format(self.rate_id, self.date_stamp)
 
 class Reports(models.Model):
     report_date = models.DateField(default=timezone.now(), verbose_name='Дата створення')
