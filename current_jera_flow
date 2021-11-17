@@ -1,1 +1,37 @@
-<mxfile host="app.diagrams.net" modified="2021-11-17T12:46:40.790Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" version="15.7.0" etag="qlARaNgfgo_L8bSVrhTU" type="github"><diagram id="1mBMS1j44sozrgD3vMox">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-17T12:57:03.402Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="0GEKKR2CZe9z7g-uSVra" version="15.7.0" type="github">
+  <diagram id="1mBMS1j44sozrgD3vMox" name="Page-1">
+    <mxGraphModel dx="997" dy="649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="K4LIVRIVtws6efnYoTSM-3" value="JERA AWS&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="240" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="K4LIVRIVtws6efnYoTSM-2" value="Infopulse&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="240" width="310" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="K4LIVRIVtws6efnYoTSM-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=22;" edge="1" parent="1" source="K4LIVRIVtws6efnYoTSM-4" target="K4LIVRIVtws6efnYoTSM-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K4LIVRIVtws6efnYoTSM-4" value="Azure DevOps pipeline" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="350" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="K4LIVRIVtws6efnYoTSM-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=22;" edge="1" parent="1" source="K4LIVRIVtws6efnYoTSM-5" target="K4LIVRIVtws6efnYoTSM-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K4LIVRIVtws6efnYoTSM-5" value="S3" style="ellipse;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="500" y="335" width="73" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K4LIVRIVtws6efnYoTSM-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=22;" edge="1" parent="1" source="K4LIVRIVtws6efnYoTSM-6" target="K4LIVRIVtws6efnYoTSM-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="K4LIVRIVtws6efnYoTSM-6" value="Engineer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="430" y="335" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="K4LIVRIVtws6efnYoTSM-10" value="VMs" style="rounded=0;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="650" y="335" width="50" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
